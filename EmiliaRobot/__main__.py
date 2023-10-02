@@ -82,29 +82,23 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hey there {} !*
-My name is Emilia,
+My name is Nezuko, (https://graph.org//file/6ba8572d5f8ac1cefb0af.jpg)
 I'm here to help you manage your groups!
 Hit /help to find out more about how to use me to my full potential.
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="Help & Commands", callback_data="help_back"),
+        InlineKeyboardButton(text="Commands", callback_data="help_back"),
     ],
-    [
-        InlineKeyboardButton(text="About", callback_data="Emilia_"),
-        InlineKeyboardButton(text="Try Inline", switch_inline_query_current_chat=""),
-    ],
-    [
-        InlineKeyboardButton(
-            text="Source Code", url="https://github.com/ZenitsuID/EmiliaChan-Robot"
+   
         ),
-        InlineKeyboardButton(text="Support", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="Support", url=f"https://t.me/SD_BotsSupport"),
     ],
     [
         InlineKeyboardButton(
             text="Add Me To Your Group",
-            url=f"t.me/{dispatcher.bot.username}?startgroup=new",
+            url=f"t.me/NezukooKamado_Bot?startgroup=new",
         ),
     ],
 ]
